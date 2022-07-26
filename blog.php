@@ -106,9 +106,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         <h2 class="entry-title"><?php echo $new_blog->v_post_title ?></h2>
                         <?php 
                         $new_tag->n_blog_post_id = $_GET['id'];
-                            $new_tags=$new_tag->read_single(); ?>
+                           $new_tag->read_single(); ?>
                         <div class="tags-links">
-                            <a href="#"><?php $new_tags->v_tag ?></a>
+                            <a href="#"><?php echo $new_tag->v_tag ?></a>
                         </div><!-- .tags-links -->
                     </header><!-- .entry-header -->
 
